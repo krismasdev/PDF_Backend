@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const routes = require('./routes');
 
 const app = express();
-app.use(cors({ origin: 'https://pdf-backend-pela.onrender.com', credentials: true }));
+app.use(cors({ origin: 'https://pdf-6wwz.onrender.com', credentials: true }));
 app.use(express.json());
 
 mongoose.connect(
