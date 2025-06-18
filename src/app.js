@@ -4,7 +4,13 @@ const mongoose = require('mongoose');
 const routes = require('./routes');
 
 const app = express();
-app.use(cors({ origin: 'https://pdf-wlfs.vercel.app/', credentials: true }));
+
+// ✅ FIXED: Removed trailing slash from origin
+app.use(cors({
+  origin: 'https://pdf-wlfs.vercel.app',
+  credentials: true
+}));
+
 app.use(express.json());
 
 mongoose.connect(
