@@ -1,0 +1,25 @@
+{
+  "name": "pdf-parser-backend",
+  "version": "1.0.0",
+  "description": "Backend for PDF Parser application",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.0",
+    "multer": "^2.0.1",
+    "pdfjs-dist": "^3.4.120",
+    "tesseract.js": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
